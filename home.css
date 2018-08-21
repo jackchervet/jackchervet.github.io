@@ -10,3 +10,15 @@ body {
     text-align: center;
 }
 
+.wipBar a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wipBar a:hover {
+    text-decoration: underline;
+}
+
+.wipBar p {
+    padding-top: 15px;
+}
