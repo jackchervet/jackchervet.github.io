@@ -1,6 +1,15 @@
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
 .wipBar {
     height: 60px;
     width: 100%;
     background: #4286f4;
     color: white;
+}
+
+.wipBar p {
+    margin-left: 10%;
+    margin-top: 15px;
 }
