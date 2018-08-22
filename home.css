@@ -8,7 +8,7 @@ body, html {
     background: rgb(78, 78, 78);
     color: white;
     text-align: center;
-    position: fixed absolute;
+    position: fixed;
 }
 
 .wipBar a {
@@ -22,12 +22,12 @@ body, html {
 
 .wipBar p {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
 }
 
 .parallax { 
     /* The image used */
-    background-image: url("/images/main.jpg");
+    background-image: url("images/main.jpg");
 
     /* Full height */
     height: 100%; 
@@ -45,3 +45,109 @@ body, html {
         background-attachment: scroll;
     }
 } */
+
+/* General wrapper class definitions and media queries */
+.wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+  
+@media screen and (min-width: 375px) {
+    .wrapper {
+        max-width: 375px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .wrapper {
+        max-width: 500px;
+    }
+}
+@media screen and (min-width: 700px){
+    .wrapper {
+        max-width: 700px;
+    }
+}
+@media screen and (min-width: 900px) {
+    .wrapper {
+        max-width: 900px;
+    }
+}
+@media screen and (min-width: 1170px) {
+    .wrapper {
+        max-width: 1170px;
+    }
+}
+  
+/* parallax header section */
+.wrapper {
+    height: 100%;
+}
+  
+.parallax__content {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    float: left;
+    transform: translateY(-50%);
+}
+  
+.parallax__header {
+    font-size: 20pt;
+    font-family: 'Shadows Into Light', cursive;
+    margin: 0;
+    padding-left: 45px;
+}
+
+.parallax__text {
+    font-size: 28pt;
+    font-family: 'Comfortaa', cursive;
+    margin: 0;
+}
+  
+@media screen and (min-width: 700px) {
+    .parallax__content {
+        text-align: left;
+        width: 50%;
+    }
+    .parallax__header {
+        /*font-size: 40pt;*/
+        margin: 0;
+    }
+    .parallax__text {
+        /*font-size: 18pt;*/
+        margin: 0;
+    }
+}
+
+.about {
+    width: 100%;
+    /* background: rgb(170, 170, 170); */
+    background: rgb(223, 222, 222);
+    font-family: 'Comfortaa', cursive;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    /* color: rgb(51, 48, 48); */
+    color: rgb(58, 58, 58);
+}
+
+.image-container {
+    background-image: url("images/davis.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    padding-top: 50px;
+}
