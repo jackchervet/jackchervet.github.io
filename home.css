@@ -1,10 +1,11 @@
-body {
+body, html {
+    height: 100%;
     font-family: 'Varela Round', sans-serif;
 }
 
 .wipBar {
     width: 100%;
-    background: #4286f4;
+    background: gray;
     color: white;
     text-align: center;
 }
@@ -21,4 +22,25 @@ body {
 .wipBar p {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("/images/main.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
 }
