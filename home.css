@@ -40,11 +40,11 @@ body, html {
 }
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-/* @media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 700px) {
     .parallax {
         background-attachment: scroll;
     }
-} */
+}
 
 /* General wrapper class definitions and media queries */
 .wrapper {
@@ -149,5 +149,4 @@ body, html {
     background-size: cover;
     height: 200px;
     width: 100%;
-    padding-top: 50px;
 }
