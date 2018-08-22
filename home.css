@@ -5,7 +5,7 @@ body, html {
 
 .wipBar {
     width: 100%;
-    background: gray;
+    background: rgb(78, 78, 78);
     color: white;
     text-align: center;
 }
