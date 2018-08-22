@@ -124,8 +124,7 @@ body, html {
 
 .about {
     width: 100%;
-    /* background: rgb(170, 170, 170); */
-    background: rgb(223, 222, 222);
+    background: #eee;
     font-family: 'Comfortaa', cursive;
     padding-left: 15%;
     padding-right: 15%;
@@ -133,6 +132,12 @@ body, html {
 
 .title {
     text-align: center;
+}
+
+.line-detail {
+    width: 15%;
+    border-bottom: 2px solid rgb(58, 58, 58);
+    margin: auto;
 }
 
 .title h3 {
