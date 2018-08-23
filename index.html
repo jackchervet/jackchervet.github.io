@@ -18,15 +18,15 @@
 <body>
     <script>
         var fadeoffset = window.innerHeight;
-        var numOfBlocks = 12;
+        var numOfBlocks = 13;
 
         for(var i = 1; i <= numOfBlocks; i++) {
             var className = ".animBlock" + i;
-            onViewport(className, "animated fadeInUp", fadeoffset);
+            onViewport(className, "animated fadeInUp", fadeoffset, displayBlock);
         }
         
         function displayBlock(el) {
-            $(el).css("display: block;");
+            $(""+el+"").css("display: block;");
         }
 
         $(".dismissBtn").on("click", function(){
@@ -202,6 +202,21 @@
                         <p class="body-paragraph"> 
                             I created a skill for Amazon Alexa using Node.js, hosted in AWS Lambda. This skill was a quiz game in which users would be prompted by Alexa to either identify or complete a line from famous Christmas songs. The skill was recognized by Amazon as a top grossing Alexa skill in December 2017, organically generating over 6,300 unique users.
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animBlock13">
+                <div class="row" style="padding-top:40px;">
+                    <div class="col">
+                        <h4>Bank Loan Default Likelihood</h4>
+                        <p>Classifcation/Regression model in Python</p>
+                        <p style="color: rgb(70, 136, 242);">Predicted default likelihood and severity with .653 MAE</p>
+                        <p class="body-paragraph"> 
+                            In Python, we used PCA and additional feature construction techniques to clean a large dataset of customer data. We implemented a stochastic gradient descent classifier to binary classify likelihood of a customer defaulting on a loan, and when a default was predicted we used a gradient forest regressor to estimate the severity of the default.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container img-ml" onclick="window.open('https://www.amazon.com/Jack-Chervet-Christmas-Song-Quiz/dp/B077RMHDD1','mywindow');" style="cursor: pointer;"></div>
                     </div>
                 </div>
             </div>
