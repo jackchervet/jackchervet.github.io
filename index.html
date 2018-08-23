@@ -1,5 +1,8 @@
 <!DOCTYPE HTML>
 <head>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -8,10 +11,33 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Shadows+Into+Light" rel="stylesheet">
 
     <link rel="stylesheet" href="home.css">
+
+    <script src="onViewport.js"></script>
+
 </head>
 <body>
+    <script>
+        var fadeoffset = window.innerHeight;
+
+        onViewport(".animBlock1", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock2", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock3", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock4", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock5", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock6", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock7", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock8", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock9", "animated fadeInUp", fadeoffset);
+        onViewport(".animBlock10", "animated fadeInUp", fadeoffset);
+
+        function displayBlock(el) {
+            $(el).css("display: block;");
+        }
+            
+    </script>
+    
     <!-- Dropdown header bar to indicate WIP -->
-    <div class="animated slideInDown wipBar">
+    <div class="animated slideInDown delay-2s wipBar">
         <p>
             Hey there! Pardon my dust, this website is under construction. I should be finished soon, but in the meantime please feel free to check me out on GitHub <a href="https://www.github.com/jackchervet/">here</a> and on LinkedIn <a href="https://www.linkedin.com/in/jack-chervet/">here</a>!
         </p>
@@ -30,29 +56,134 @@
 
     <!-- About Me -->
     <div class="about">
-        <div class="title">
-            <span class="glyphicon glyphicon-menu-right" aria-hidden="true;"></span> <h3> A Little About Me </h3> 
+        <div class="animBlock1">
+            <div class="title">
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true;"></span> <h3> A Little About Me </h3> 
+            </div>
+            <div class="line-detail"></div>
         </div>
-        <div class="line-detail"></div>
-        <p style="padding: 20px 0px 20px 0px;">
-            Hi! I'm Jack, I am a Computer Science student graduate from University of California, Davis and I am pursuing a career in software development. I’m passionate about entertainment, creative problem solving, and new technologies. I’m seeking a full-time position where I can apply the skills I’ve learned over the course of my academic and professional careers and contribute meaningfully to interesting projects.
-        </p>
-        <h4>Education</h4>
-        <hr>
+        <div class="animBlock2">
+            <p style="padding: 20px 0px 20px 0px;">
+                Hi! I'm Jack, I am a Computer Science student graduate from University of California, Davis and I am pursuing a career in software development. I’m passionate about entertainment, creative problem solving, and new technologies. I’m seeking a full-time position where I can apply the skills I’ve learned over the course of my academic and professional careers and contribute meaningfully to interesting projects.
+            </p>
+        </div>
+        <div class="animBlock3">
+            <h4>Education</h4>
+            <hr>
+        </div>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                        <h5>University of California, Davis</h5>
+            <div class="animBlock4">
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <div class="image-container img-davis"></div>
+                    </div>
+                    <div class="col">
+                        <h4>University of California, Davis</h4>
                         <p style="color: rgb(70, 136, 242);">B.S. in Computer Science, earned June 2018</p>
-                        <p> 
+                        <p class="body-paragraph"> 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
+                    </div>
                 </div>
-                <div class="col">
-                        <div class="image-container"></div>
+            </div>
+            <div class="animBlock5">
+                <div class="row" style="padding-top: 40px;">
+                    <div class="col" >
+                        <h4>Las Positas College</h4>
+                        <p style="color: rgb(70, 136, 242);">Attended August 2014 - June 2016 prior to transferring to UC Davis</p>
+                        <p class="body-paragraph"> 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container img-laspo2"></div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- Work -->
+    <div class="work">
+        <div class="animBlock6">
+            <div class="title">
+                <h3> Stuff From the Real World </h3> 
+            </div>
+            <div class="line-detail"></div>
+        </div>
+        <div class="container-fluid" style="padding-top: 20px;">
+            <div class="animBlock7">
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <div class="image-container img-oodles" onclick="window.open('http://www.oodlescorp.com/','mywindow');" style="cursor: pointer;"></div>
+                    </div>
+                    <div class="col">
+                        <h4>Full-Stack Developer</h4>
+                        <p>Oodles, Inc.</p>
+                        <p style="color: rgb(70, 136, 242);">April 2018 - June 2018</p>
+                        <p class="body-paragraph"> 
+                            I was contracted to design and construct the Oodles Inc. website from scratch, including all design/visual work, e-mail systems and database (MySQL), as well as front-end UI/UX (HTML/CSS, JavaScript, jQuery). I built this website on Node.js, and I feel that this experience helped further develop my web programming skills both on the front-end and the back-end. I was able to apply what I learned in developing the TurboHedge platform to more efficiently design and develop this solo project.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animBlock8">
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <h4>Full-Stack Developer</h4>
+                        <p>TurboHedge, Inc.</p>
+                        <p style="color: rgb(70, 136, 242);">June 2017 - August 2017</p>
+                        <p class="body-paragraph"> 
+                            I was contracted by TurboHedge Inc. to work on a small team to design and implement the TurboHedge web platform (Node.js). This work included implementation of proprietary algorithms, user and data management systems (MySQL), as well as front-end UI/UX (HTML/CSS, JavaScript, jQuery). This was my first introduction to more modern web development and in designing a web application from scratch. Over the course of three months I was able to become proficient in all of the languages, technologies, and packages used (Handlebars, Bootstrap, etc.) and personally implement the majority of the front-end work as well as a significant portion of the back-end infrastructure.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container img-turbohedge" onclick="window.open('https://www.turbohedge.com/','mywindow');" style="cursor: pointer;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="animBlock9">
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <div class="image-container img-nanosys" onclick="window.open('http://www.nanosysinc.com/','mywindow');" style="cursor: pointer;"></div>
+                    </div>
+                    <div class="col">
+                        <h4>IT Intern</h4>
+                        <p>Nanosys, Inc.</p>
+                        <p style="color: rgb(70, 136, 242);">June 2016 - September 2016</p>
+                        <p class="body-paragraph"> 
+                            I was hired to assist the Director of IT to maintain systems and computers to ensure smooth day-to-day operations. This included keeping software up-to-date across company computers, solving technical issues to allow employees to work at optimum efficiency, and even finding creative scripting solutions to help accomplish manually intensive and repetitive tasks more efficiently. I participated in server migrations and upgrades, and as a summer-long project I oversaw and implemented a new intranet site built on Microsoft SharePoint.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="animBlock10">
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <h4>Peer Tutor</h4>
+                        <p>Las Positas College</p>
+                        <p style="color: rgb(70, 136, 242);">January 2016 - June 2016</p>
+                        <p class="body-paragraph"> 
+                            I provided individual as well as small group tutoring to students enrolled in Mechanical Physics, Electricity and Magnetism Physics, Calculus, Algebra, and Computer Science. I worked with several different students and groups twice a week for the semester and also provided drop-in tutoring when possible. My students seemed to benefit from the extra time spent focusing on their classes and I was able to work heavily on my communication, articulation, and teaching skills.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container img-laspo" onclick="window.open('http://www.laspositascollege.edu/tutorialcenter/','mywindow');" style="cursor: pointer;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects section -->
+    <div class="projects">
+        <div class="title">
+            <h3>Some Cool Stuff I've Done</h3>
+        </div>         
+        <div class="line-detail"></div>
+    </div>
+    <div class="connect">
+
     </div>
 </body>
 </html>

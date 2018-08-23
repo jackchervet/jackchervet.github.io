@@ -9,6 +9,7 @@ body, html {
     color: white;
     text-align: center;
     position: fixed;
+    z-index: 10;
 }
 
 .wipBar a {
@@ -122,12 +123,18 @@ body, html {
     }
 }
 
-.about {
+.about, .work, .projects, .connect {
     width: 100%;
-    background: #eee;
     font-family: 'Comfortaa', cursive;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding: 10px 15% 40px 15%;
+}
+
+.about, .projects {
+    background: #eee;
+}
+
+.work, .connect {
+    background: #fff;
 }
 
 .title {
@@ -147,11 +154,38 @@ body, html {
     color: rgb(58, 58, 58);
 }
 
-.image-container {
+.img-davis {
     background-image: url("images/davis.jpg");
+}
+
+.img-oodles {
+    background-image: url("images/oodles.png");
+}
+
+.img-turbohedge {
+    background-image: url("images/turbohedge.png");
+}
+
+.img-nanosys {
+    background-image: url("images/nanosys.png");
+}
+
+.img-laspo {
+    background-image: url("images/laspo.jpg");
+}
+
+.img-laspo2 {
+    background-image: url("images/laspo2.jpg"); 
+}
+
+.image-container {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 200px;
+    background-size: contain;
+    min-height: 100%;
     width: 100%;
+}
+
+.body-paragraph {
+    font-size: 10pt;
 }
