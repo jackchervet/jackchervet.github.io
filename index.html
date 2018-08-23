@@ -18,29 +18,35 @@
 <body>
     <script>
         var fadeoffset = window.innerHeight;
+        var numOfBlocks = 12;
 
-        onViewport(".animBlock1", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock2", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock3", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock4", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock5", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock6", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock7", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock8", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock9", "animated fadeInUp", fadeoffset);
-        onViewport(".animBlock10", "animated fadeInUp", fadeoffset);
-
+        for(var i = 1; i <= numOfBlocks; i++) {
+            var className = ".animBlock" + i;
+            onViewport(className, "animated fadeInUp", fadeoffset);
+        }
+        
         function displayBlock(el) {
             $(el).css("display: block;");
         }
+
+        $(".dismissBtn").on("click", function(){
+            $(".wipBar").removeClass("slideInDown").addClass("slideOutUp");
+        });
             
+        function dismissWipBar() {
+            $(".wipBar").removeClass("slideInDown").addClass("slideOutUp");
+        }
     </script>
     
     <!-- Dropdown header bar to indicate WIP -->
-    <div class="animated slideInDown delay-2s wipBar">
+    <div class="animated slideInDown wipBar">
         <p>
             Hey there! Pardon my dust, this website is under construction. I should be finished soon, but in the meantime please feel free to check me out on GitHub <a href="https://www.github.com/jackchervet/">here</a> and on LinkedIn <a href="https://www.linkedin.com/in/jack-chervet/">here</a>!
+            <br>
+            <a class="dismissBtn" href="javascript:dismissWipBar()" style="float: right; padding-right: 15px; padding-bottom: 5px;">Dismiss</a>
         </p>
+        
+        
     </div>
 
     <!-- Main Body -->
@@ -177,10 +183,29 @@
 
     <!-- Projects section -->
     <div class="projects">
-        <div class="title">
-            <h3>Some Cool Stuff I've Done</h3>
-        </div>         
-        <div class="line-detail"></div>
+        <div class="animBlock11">
+            <div class="title">
+                <h3>Some Cool Stuff I've Done</h3>
+            </div>         
+            <div class="line-detail"></div>
+        </div>
+        <div class="container-fluid" style="padding-top: 20px;">    
+            <div class="animBlock12">
+                <div class="row" style="padding-top:20px;">
+                    <div class="col">
+                        <div class="image-container img-alexa" onclick="window.open('https://www.amazon.com/Jack-Chervet-Christmas-Song-Quiz/dp/B077RMHDD1','mywindow');" style="cursor: pointer;"></div>
+                    </div>
+                    <div class="col">
+                        <h4>Christmas Song Quiz</h4>
+                        <p>Amazon Alexa Skill</p>
+                        <p style="color: rgb(70, 136, 242);">Recognized by Amazon as a top-grossing skill December 2017</p>
+                        <p class="body-paragraph"> 
+                            I created a skill for Amazon Alexa using Node.js, hosted in AWS Lambda. This skill was a quiz game in which users would be prompted by Alexa to either identify or complete a line from famous Christmas songs. The skill was recognized by Amazon as a top grossing Alexa skill in December 2017, organically generating over 6,300 unique users.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="connect">
 
