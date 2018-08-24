@@ -197,3 +197,19 @@ body, html {
 .body-paragraph {
     font-size: 10pt;
 }
+
+
+.animation-delay-100 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.animation-delay-200 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.animation-delay-300 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
