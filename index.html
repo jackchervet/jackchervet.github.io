@@ -26,7 +26,7 @@
             var className = ".animBlock" + i;
             onViewport(className, "animated fadeInUp", fadeoffset, displayBlock);
         }
-        
+
         function displayBlock(el) {
             $(""+el+"").css("display: block;");
         }
@@ -34,12 +34,12 @@
         $(".dismissBtn").on("click", function(){
             $(".wipBar").removeClass("slideInDown").addClass("slideOutUp");
         });
-            
+
         function dismissWipBar() {
             $(".wipBar").removeClass("slideInDown").addClass("slideOutUp");
         }
     </script>
-    
+
     <!-- Dropdown header bar to indicate WIP -->
     <!-- <div class="animated slideInDown wipBar">
         <p>
@@ -64,13 +64,17 @@
     <div class="about">
         <div class="animBlock1 animation-delay-200">
             <div class="title">
-                <span class="glyphicon glyphicon-menu-right" aria-hidden="true;"></span> <h3> A Little About Me </h3> 
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true;"></span> <h3> A Little About Me </h3>
             </div>
             <div class="line-detail"></div>
         </div>
         <div class="animBlock2 animation-delay-200">
             <p style="padding: 20px 0px 20px 0px;">
-                Hi! I'm Jack. I'm a Computer Science graduate from the University of California, Davis and I am pursuing a career in software development. I’m passionate about entertainment, creative problem solving, and new technologies. I’m looking for a full-time position where I can apply the skills I’ve learned over the course of my academic and professional careers and contribute meaningfully to interesting projects.
+                Hi! I'm Jack. I graduated from the University of California, Davis and I'm now
+                working as a software developer in New York City. In my free time I like to explore
+                Manhattan, spend time with friends, and try as many new restaurants as possible.
+                I’m passionate about entertainment, creative problem solving, and new technologies.
+                Let's get in touch!
             </p>
         </div>
         <div class="animBlock3 animation-delay-200">
@@ -86,8 +90,8 @@
                     <div class="col">
                         <h4>University of California, Davis</h4>
                         <p style="color: rgb(70, 136, 242);">B.S. in Computer Science, earned June 2018</p>
-                        <p class="body-paragraph"> 
-                            Though I only attended the University for two short years, Davis quickly became a second home to me. I was lucky enough to transfer to the school from community college along with some friends I had made, and they pushed me to be the best student, mentor, and friend that I could be. Davis is where I realized just how broad of a field Computer Science is, and where I was connected with my first real programming jobs. It's where I found opportunities to study abroad and learn about other cultures, even as I learned more about the culture I lived in every day. It's where I made lifelong friends and pursued my passion. I'll always be thankful for the experiences Davis provided me. Go Aggies!   
+                        <p class="body-paragraph">
+                            Though I only attended the University for two short years, Davis quickly became a second home to me. I was lucky enough to transfer to the school from community college along with some friends I had made, and they pushed me to be the best student, mentor, and friend that I could be. Davis is where I realized just how broad of a field Computer Science is, and where I was connected with my first real programming jobs. It's where I found opportunities to study abroad and learn about other cultures, even as I learned more about the culture I lived in every day. It's where I made lifelong friends and pursued my passion. I'll always be thankful for the experiences Davis provided me. Go Aggies!
                         </p>
                     </div>
                 </div>
@@ -97,8 +101,8 @@
                     <div class="col" >
                         <h4>Las Positas Community College</h4>
                         <p style="color: rgb(70, 136, 242);">Attended August 2014 - June 2016 prior to transferring to UC Davis</p>
-                        <p class="body-paragraph"> 
-                            Las Positas College helped me find my drive. Continuing to live at my childhood home as many of my friends went off to attend celebrated four-year universities was a humbling experience and helped me to focus on my education with gusto. As a Computer Science student, I got connected with other programmers, engineers, and scientists who were just as dedicated to success as I was. As a peer tutor, I found a home in the tutorial center with many of those brilliant people and was able to give back to the school and help others find their drive as I had.  
+                        <p class="body-paragraph">
+                            Las Positas College helped me find my drive. Continuing to live at my childhood home as many of my friends went off to attend celebrated four-year universities was a humbling experience and helped me to focus on my education with gusto. As a Computer Science student, I got connected with other programmers, engineers, and scientists who were just as dedicated to success as I was. As a peer tutor, I found a home in the tutorial center with many of those brilliant people and was able to give back to the school and help others find their drive as I had.
                         </p>
                     </div>
                     <div class="col">
@@ -113,12 +117,32 @@
     <div class="work">
         <div class="animBlock6 animation-delay-200">
             <div class="title">
-                <h3> Stuff From the Real World </h3> 
+                <h3> Stuff From the Real World </h3>
             </div>
             <div class="line-detail"></div>
         </div>
         <div class="container-fluid" style="padding-top: 20px;">
             <div class="animBlock7 animation-delay-200">
+                <div class="row" style="padding-top: 20px;">
+                    <div class="col">
+                        <h4>Partner Engineer</h4>
+                        <p>Yext, Inc.</p>
+                        <p style="color: rgb(70, 136, 242);">November 2018 - Present</p>
+                        <p class="body-paragraph">
+                            Currently, I'm living in New York City and working as a Partner Engineer for
+                            Yext. At Yext, we give businesses the ability to build strong relationships
+                            with their customers by allowing them to control every aspect of their customer-facing
+                            information across the web. As a Partner Engineer, I work with my team to build
+                            out new integrations (and maintain current ones) with publishers such as Google,
+                            Facebook, and Yelp so that our clients can have perfect information everywhere.
+                        </p>
+                    </div>
+                    <div class="col">
+                        <div class="image-container img-yext" onclick="window.open('https://www.yext.com/','mywindow');" style="cursor: pointer;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="animBlock8 animation-delay-200">
                 <div class="row" style="padding-top: 20px;">
                     <div class="col">
                         <div class="image-container img-oodles" onclick="window.open('http://www.oodlescorp.com/','mywindow');" style="cursor: pointer;"></div>
@@ -127,19 +151,19 @@
                         <h4>Full-Stack Developer</h4>
                         <p>Oodles, Inc.</p>
                         <p style="color: rgb(70, 136, 242);">April 2018 - June 2018</p>
-                        <p class="body-paragraph"> 
+                        <p class="body-paragraph">
                             I was contracted to design and construct the Oodles Inc. website from scratch, including all design/visual work, e-mail systems and database (MySQL), as well as front-end UI/UX (HTML/CSS, JavaScript, jQuery). I built this website on Node.js, and I feel that this experience helped further develop my web programming skills both on the front-end and the back-end. I was able to apply what I learned in developing the TurboHedge platform to more efficiently design and develop this solo project.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="animBlock8 animation-delay-200">
+            <div class="animBlock9 animation-delay-200">
                 <div class="row" style="padding-top: 20px;">
                     <div class="col">
                         <h4>Full-Stack Developer</h4>
                         <p>TurboHedge, Inc.</p>
                         <p style="color: rgb(70, 136, 242);">June 2017 - August 2017</p>
-                        <p class="body-paragraph"> 
+                        <p class="body-paragraph">
                             I was contracted by TurboHedge Inc. to work on a small team to design and implement the TurboHedge web platform (Node.js). This work included implementation of proprietary algorithms, user and data management systems (MySQL), as well as front-end UI/UX (HTML/CSS, JavaScript, jQuery). This was my first introduction to more modern web development and in designing a web application from scratch. Over the course of three months I was able to become proficient in all of the languages, technologies, and packages used (Handlebars, Bootstrap, etc.) and personally implement the majority of the front-end work as well as a significant portion of the back-end infrastructure.
                         </p>
                     </div>
@@ -148,7 +172,7 @@
                     </div>
                 </div>
             </div>
-            <div class="animBlock9 animation-delay-200">
+            <div class="animBlock10 animation-delay-200">
                 <div class="row" style="padding-top: 20px;">
                     <div class="col">
                         <div class="image-container img-nanosys" onclick="window.open('http://www.nanosysinc.com/','mywindow');" style="cursor: pointer;"></div>
@@ -157,19 +181,19 @@
                         <h4>IT Intern</h4>
                         <p>Nanosys, Inc.</p>
                         <p style="color: rgb(70, 136, 242);">June 2016 - September 2016</p>
-                        <p class="body-paragraph"> 
+                        <p class="body-paragraph">
                             I was hired to assist the Director of IT to maintain systems and computers to ensure smooth day-to-day operations. This included keeping software up-to-date across company computers, solving technical issues to allow employees to work at optimum efficiency, and even finding creative scripting solutions to help accomplish manually intensive and repetitive tasks more efficiently. I participated in server migrations and upgrades, and as a summer-long project I oversaw and implemented a new intranet site built on Microsoft SharePoint.
                         </p>
                     </div>
                 </div>
             </div>
-            <div class="animBlock10 animation-delay-200">
+            <!-- <div class="animBlock11 animation-delay-200">
                 <div class="row" style="padding-top: 20px;">
                     <div class="col">
                         <h4>Peer Tutor</h4>
                         <p>Las Positas College</p>
                         <p style="color: rgb(70, 136, 242);">January 2016 - June 2016</p>
-                        <p class="body-paragraph"> 
+                        <p class="body-paragraph">
                             I provided individual as well as small group tutoring to students enrolled in Mechanical Physics, Electricity and Magnetism Physics, Calculus, Algebra, and Computer Science. I worked with several different students and groups twice a week for the semester and also provided drop-in tutoring when possible. My students seemed to benefit from the extra time spent focusing on their classes and I was able to work heavily on my communication, articulation, and teaching skills.
                         </p>
                     </div>
@@ -177,7 +201,7 @@
                         <div class="image-container img-laspo2" onclick="window.open('http://www.laspositascollege.edu/tutorialcenter/','mywindow');" style="cursor: pointer;"></div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -186,10 +210,10 @@
         <div class="animBlock11 animation-delay-200">
             <div class="title">
                 <h3>Some Cool Stuff I've Done</h3>
-            </div>         
+            </div>
             <div class="line-detail"></div>
         </div>
-        <div class="container-fluid" style="padding-top: 20px;">    
+        <div class="container-fluid" style="padding-top: 20px;">
             <div class="animBlock12 animation-delay-200">
                 <div class="row" style="padding-top:20px;">
                     <div class="col">
@@ -199,7 +223,7 @@
                         <h4>Christmas Song Quiz</h4>
                         <p>Amazon Alexa Skill</p>
                         <p style="color: rgb(70, 136, 242);">Recognized by Amazon as a top-grossing skill in December 2017</p>
-                        <p class="body-paragraph"> 
+                        <p class="body-paragraph">
                             I created a skill for Amazon Alexa using Node.js, hosted in AWS Lambda. This skill was a quiz game in which users would be prompted by Alexa to either identify or complete a line from famous Christmas songs. The skill was recognized by Amazon as a top grossing Alexa skill in December 2017, organically generating over 6,300 unique users.
                         </p>
                     </div>
@@ -211,7 +235,7 @@
                         <h4>Bank Loan Default Likelihood</h4>
                         <p>Classifcation/Regression model in Python</p>
                         <p style="color: rgb(70, 136, 242);">Predicted default likelihood and severity with .653 MAE</p>
-                        <p class="body-paragraph"> 
+                        <p class="body-paragraph">
                             In Python, we used PCA and additional feature construction techniques to clean a large dataset of customer data. We implemented a stochastic gradient descent classifier to binary classify likelihood of a customer defaulting on a loan, and when a default was predicted we used a gradient forest regressor to estimate the severity of the default.
                         </p>
                     </div>
@@ -225,8 +249,8 @@
     <div class="connect">
         <div class="animBlock14 animation-delay-200">
             <div class="title">
-                <h3>I like drinking good coffee, <br> meeting exciting people, <br> and trying new food</h3>
-            </div>         
+                <h3>I'm on a neverending quest <br> to find the best cup of <br> coffee. Can you help?</h3>
+            </div>
             <div class="line-detail"></div>
             <div class="title" style="padding-top: 40px; padding-bottom: 30px;">
                 <h4>Let's get in touch!</h4>
@@ -240,7 +264,7 @@
                     </div>
                 </div>
                 <div class="col-xs-6 col-md-3">
-                    <div class="animBlock16 animation-delay-300" style="text-align: center;">    
+                    <div class="animBlock16 animation-delay-300" style="text-align: center;">
                         <a href="https://www.github.com/jackchervet/"><i class="fab fa-github fa-7x"></i></a>
                     </div>
                 </div>
